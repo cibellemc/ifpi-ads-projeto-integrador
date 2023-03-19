@@ -1,6 +1,7 @@
 <h1 align="center"> STAGEO </h1>
 
-## 🔘 <a href="https://youtu.be/3IJawkk1tJE" align=center>Clique para conhecer os requisitos</a>
+## 🔘 <a href="https://youtu.be/3IJawkk1tJE" align=center>Vídeo explicativo dos requisitos</a>
+## 🔘 <a href="https://1drv.ms/x/s!Aryk7IisDPgpggsr1mGJLX7NJQfl?e=fpn1QX" align=center>Planilha de especificações</a>
 
 <p align="center">
   <img alt="Imagem do vídeo de apresentação dos requisitos" src=".github/STAGEO.png" width="100%">

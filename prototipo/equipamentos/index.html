@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipamentos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="side-bar.css">
+    	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <!--
@@ -18,32 +21,93 @@
     -->
 
     <!-- https://www.youtube.com/watch?v=OeMuUKedtPc -->
-    <div class="wrapper">
-        <nav>
-            <div class="items">
-                <span class="item active" data-name="todos">Todos</span>
-                <span class="item" data-name="tripe">Tripé</span>
-                <span class="item" data-name="mira">Mira</span>
-                <span class="item" data-name="bipe">Bipé</span>
-                <span class="item" data-name="bastao">Bastão</span>
-                <span class="item" data-name="teodolito">Teodólito</span>
-                <span class="item" data-name="receptor">Receptores</span>
-                <span class="item" data-name="veiculo">Veículos</span>
-                <span class="item" data-name="esteroscopico">Esteroscópico</span>
-                <span class="item" data-name="carta">Cartas</span>
-            </div>
-        </nav>
-    </div>
 
-    <div class="gallery">
-        <div class="image" data-name="tripe"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
-        <div class="image" data-name="mira"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
-        <div class="image" data-name="bipe"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
-        <div class="image" data-name="veiculo"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
-        <div class="image" data-name="veiculo"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
-        <div class="image" data-name="receptor"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
-        <div class="image" data-name="receptor"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
-        <div class="image" data-name="receptor"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
+    <section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">STAGEO</span>
+		</a>
+		<ul class="side-menu top">
+            <li  class="active">
+                <a href="#">
+                    <i class='bx bxs-shopping-bag-alt' ></i>
+                    <span class="text">Equipamentos</span>
+                </a>
+            </li>
+			<li>
+				<a href="../reservas/index.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Reservas</span>
+				</a>
+			</li>
+            <li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Configurações</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>			
+	</section>
+
+    <section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Pesquisar...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">2</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="img/people.png">
+			</a>
+		</nav>
+
+    </section>
+
+
+    <div class="content-left">
+        <div class="wrapper">
+            <nav>
+                <div class="items">
+                    <span class="item active" data-name="todos">Todos</span>
+                    <span class="item" data-name="tripe">Tripé</span>
+                    <span class="item" data-name="mira">Mira</span>
+                    <span class="item" data-name="bipe">Bipé</span>
+                    <span class="item" data-name="bastao">Bastão</span>
+                    <span class="item" data-name="teodolito">Teodólito</span>
+                    <span class="item" data-name="receptor">Receptores</span>
+                    <span class="item" data-name="veiculo">Veículos</span>
+                    <span class="item" data-name="esteroscopico">Esteroscópico</span>
+                    <span class="item" data-name="carta">Cartas</span>
+                </div>
+            </nav>
+        </div>
+    
+        <div class="gallery">
+            <div class="image" data-name="tripe"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
+            <div class="image" data-name="mira"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
+            <div class="image" data-name="bipe"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
+            <div class="image" data-name="veiculo"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
+            <div class="image" data-name="veiculo"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
+            <div class="image" data-name="receptor"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
+            <div class="image" data-name="receptor"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
+            <div class="image" data-name="receptor"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
+        </div>
+
     </div>
 
     <div class="preview-box">
@@ -57,5 +121,6 @@
     <div class="shadow"></div>
         
     <script src="script.js"></script>
+    <script src="s2.js"></script>
 </body>
 </html>

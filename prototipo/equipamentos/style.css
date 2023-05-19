@@ -14,6 +14,7 @@
 .wrapper nav {
     display: flex;
     justify-content: center;
+    background: none;
 }
 
 nav .items {
@@ -30,15 +31,15 @@ nav .items .item {
     padding: 5px 20px;
     font-size: 16px;
     font-weight: 500;
-    border: 2px solid black;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
+    background: white;
 }
 
 nav .items .item:hover {
     color: white;
-    background: black;
+	background: var(--grey);
 }
 
 .content-left {
@@ -49,23 +50,6 @@ nav .items .item:hover {
     overflow-y: auto;
 }
 
-/*.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-.gallery .image {
-    padding: 7px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(25%, 1fr), 1fr));
-}
-
-.gallery .image img {
-    width: 100%;
-    vertical-align: middle;
-    transition: all 0.3s ease;
-}*/
-
 .gallery {
     /* superior | direita | inferior | esquerda */
     padding: 24px;
@@ -74,7 +58,6 @@ nav .items .item:hover {
     grid-gap: 10px;
     justify-items: center;
     border-radius: 20px;
-    background: var(--light);
     overflow-x: auto;
   }
   
@@ -82,6 +65,7 @@ nav .items .item:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
 }
 
 .gallery .image.hide {

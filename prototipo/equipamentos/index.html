@@ -24,13 +24,13 @@
 
     <section id="sidebar">
 		<a href="#" class="brand">
-			<i class='bx bxs-smile'></i>
+			<i class='bx bx-radar'></i>
 			<span class="text">STAGEO</span>
 		</a>
 		<ul class="side-menu top">
             <li  class="active">
                 <a href="#">
-                    <i class='bx bxs-shopping-bag-alt' ></i>
+                    <i class='bx bxs-home' ></i>
                     <span class="text">Equipamentos</span>
                 </a>
             </li>
@@ -47,7 +47,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#" class="logout">
+				<a href="../inicial/index.html" class="logout">
 					<i class='bx bxs-log-out-circle' ></i>
 					<span class="text">Logout</span>
 				</a>
@@ -57,7 +57,7 @@
 
     <section id="content">
 		<!-- NAVBAR -->
-		<nav>
+		<nav class="nav">
 			<i class='bx bx-menu' ></i>
 			<form action="#">
 				<div class="form-input">
@@ -72,55 +72,56 @@
 				<span class="num">2</span>
 			</a>
 			<a href="#" class="profile">
-				<img src="img/people.png">
+				<img src="../assets/people.png">
 			</a>
 		</nav>
 
+        <div class="content-left">
+            <div class="wrapper">
+                <nav>
+                    <div class="items">
+                        <span class="item active" data-name="todos">Todos</span>
+                        <span class="item" data-name="tripé">Tripé</span>
+                        <span class="item" data-name="mira">Mira</span>
+                        <span class="item" data-name="bipé">Bipé</span>
+                        <span class="item" data-name="bastão">Bastão</span>
+                        <span class="item" data-name="teodólito">Teodólito</span>
+                        <span class="item" data-name="receptor">Receptores</span>
+                        <span class="item" data-name="veículo">Veículos</span>
+                        <span class="item" data-name="esteroscópico">Esteroscópico</span>
+                        <span class="item" data-name="carta">Cartas</span>
+                    </div>
+                </nav>
+            </div>
+        
+            <div class="gallery">
+                <div class="image" data-name="tripé"><span><img src="../assets/tripe.webp" alt=""></span></div>
+                <div class="image" data-name="tripé"><span><img src="../assets/tripe.webp" alt=""></span></div>
+                <div class="image" data-name="veículo"><span><img src="../assets/drone.jpg" alt=""></span></div>
+                <div class="image" data-name="veículo"><span><img src="../assets/drone.jpg" alt=""></span></div>
+                <div class="image" data-name="veículo"><span><img src="../assets/drone.jpg" alt=""></span></div>
+                <div class="image" data-name="bipé"><span><img src="../assets/bipe.jpg" alt=""></span></div>
+                <div class="image" data-name="bastão"><span><img src="../assets/bastao.jpg" alt=""></span></div>
+                <div class="image" data-name="teodólito"><span><img src="../assets/teodolito.jpg" alt=""></span></div>
+                <div class="image" data-name="esteroscópico"><span><img src="../assets/estereoscopio.webp" alt=""></span></div>
+            </div>
+    
+        </div>
     </section>
 
 
-    <div class="content-left">
-        <div class="wrapper">
-            <nav>
-                <div class="items">
-                    <span class="item active" data-name="todos">Todos</span>
-                    <span class="item" data-name="tripe">Tripé</span>
-                    <span class="item" data-name="mira">Mira</span>
-                    <span class="item" data-name="bipe">Bipé</span>
-                    <span class="item" data-name="bastao">Bastão</span>
-                    <span class="item" data-name="teodolito">Teodólito</span>
-                    <span class="item" data-name="receptor">Receptores</span>
-                    <span class="item" data-name="veiculo">Veículos</span>
-                    <span class="item" data-name="esteroscopico">Esteroscópico</span>
-                    <span class="item" data-name="carta">Cartas</span>
-                </div>
-            </nav>
-        </div>
-    
-        <div class="gallery">
-            <div class="image" data-name="tripe"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
-            <div class="image" data-name="mira"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
-            <div class="image" data-name="bipe"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
-            <div class="image" data-name="veiculo"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
-            <div class="image" data-name="veiculo"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
-            <div class="image" data-name="receptor"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
-            <div class="image" data-name="receptor"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
-            <div class="image" data-name="receptor"><span><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></span></div>
-        </div>
-
-    </div>
 
     <div class="preview-box">
         <div class="details">
             <span class="title">Categoria: <p></p></span>
             <span class="icon">&#10006;</span>
         </div>
-        <div class="image-box"><img src="./assets/resolve-images-not-showing-problem-1.webp" alt=""></div>
+        <div class="image-box"><img src="" alt=""></div>
     </div>
     
     <div class="shadow"></div>
         
     <script src="script.js"></script>
-    <script src="s2.js"></script>
+    <script src="../reservas/script.js"></script>
 </body>
 </html>

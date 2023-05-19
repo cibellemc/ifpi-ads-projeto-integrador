@@ -202,27 +202,33 @@ body {
 #content nav a {
 	color: var(--dark);
 }
+
 #content nav .bx.bx-menu {
 	cursor: pointer;
 	color: var(--dark);
 }
+
 #content nav .nav-link {
 	font-size: 16px;
 	transition: .3s ease;
 }
+
 #content nav .nav-link:hover {
 	color: var(--blue);
 }
+
 #content nav form {
 	max-width: 400px;
 	width: 100%;
 	margin-right: auto;
 }
+
 #content nav form .form-input {
 	display: flex;
 	align-items: center;
 	height: 36px;
 }
+
 #content nav form .form-input input {
 	flex-grow: 1;
 	padding: 0 16px;
@@ -232,8 +238,10 @@ body {
 	border-radius: 36px 0 0 36px;
 	outline: none;
 	width: 100%;
+	font-family: var(--poppins);
 	color: var(--dark);
 }
+
 #content nav form .form-input button {
 	width: 36px;
 	height: 100%;
@@ -253,6 +261,7 @@ body {
 	font-size: 20px;
 	position: relative;
 }
+
 #content nav .notification .num {
 	position: absolute;
 	top: -6px;
@@ -269,12 +278,14 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
 #content nav .profile img {
 	width: 36px;
 	height: 36px;
 	object-fit: cover;
 	border-radius: 50%;
 }
+
 #content nav .switch-mode {
 	display: block;
 	min-width: 50px;
@@ -284,6 +295,7 @@ body {
 	cursor: pointer;
 	position: relative;
 }
+
 #content nav .switch-mode::before {
 	content: '';
 	position: absolute;
@@ -295,6 +307,7 @@ body {
 	border-radius: 50%;
 	transition: all .3s ease;
 }
+
 #content nav #switch-mode:checked + .switch-mode::before {
 	left: calc(100% - (25px - 4px) - 2px);
 }
@@ -309,14 +322,9 @@ body {
 	overflow-y: auto;
 }
 
-a .btn-download {
-	background-color: red;
-}
-
 #content .btn-download-active, .btn-download {
 	height: 26px;
 	font-size: 10px;
-	padding: 0 16px;
 	border-radius: 36px;
 	background: var(--blue);
 	color: var(--light);
@@ -325,7 +333,6 @@ a .btn-download {
 	align-items: center;
 	grid-gap: 10px;
 	font-weight: 500;
-	margin: 0;
 }
 
 .btn-download {
@@ -391,6 +398,7 @@ a .btn-download {
 	width: 100%;
 	color: var(--dark);
 }
+
 #content main .table-data > div {
 	border-radius: 20px;
 	background: var(--light);
@@ -518,6 +526,7 @@ a .btn-download {
 
 	#content main .box-info {
 		grid-template-columns: 1fr;
+		overflow-x: auto;
 	}
 
 	#content main .table-data .head {

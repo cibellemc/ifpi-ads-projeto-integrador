@@ -59,7 +59,7 @@ nav .items .item:hover {
     justify-items: center;
     border-radius: 20px;
     overflow-x: auto;
-  }
+}
   
 .gallery .image {
     display: flex;
@@ -102,14 +102,14 @@ nav .items .item:hover {
 }
 
 .preview-box {
+    box-sizing: border-box;
+    max-width: 50vw;
     position: fixed;
     top: 50%;
-    left: 50%;
+	width: calc(100% - 60px);
+	left: 55%;
     background: white;
     transform: translate(-50%, -50%) scale(0.9);
-    max-width: 700px;
-    width: 100%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 2);
     border-radius: 3px;
     padding: 0 5px 5px 5px;
     z-index: 5;
@@ -128,12 +128,13 @@ nav .items .item:hover {
     align-items: center;
     padding: 13px 15px 13px 10px;
     justify-content: space-between;
+    min-width: 45%;
 }
 
 .preview-box .details .title {
     display: flex;
     flex-direction: row;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 400;
 }
 
@@ -151,12 +152,13 @@ nav .items .item:hover {
 .preview-box .image-box {
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 .image-box img {
-    max-height: 300px;
-    width: 50%;
+    max-height: 50vh;
     border-radius: 0 0 3px 3px;
+    max-width: 100%;
 }
 
 .shadow {
@@ -172,5 +174,19 @@ nav .items .item:hover {
 
 .shadow.show {
     display: block;
+    padding: 50px;
+}
+
+@media only screen and (max-width: 459px){
+    .preview-box .details .title {
+        display: none;
+    }
+    .preview-box .details {
+        justify-content: end;
+    }
+    .shadow.show {
+        display: block;
+        padding: 40px 20px;
+    }
 }
 

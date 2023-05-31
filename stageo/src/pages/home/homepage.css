@@ -1,0 +1,157 @@
+.wrapper {
+    padding: 40px;
+}
+
+nav .items {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+nav .items .active,
+
+nav .items .item {
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+nav .items .item:hover {
+    color: white;
+	background: var(--grey);
+}
+
+.gallery {
+    /* superior | direita | inferior | esquerda */
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    justify-items: center;
+    border-radius: 20px;
+    overflow-x: auto;
+}
+  
+.gallery .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.gallery .image.hide {
+    display: none;
+}
+
+.gallery .image.show{
+    animation: animate 0.4 ease;
+}
+
+.gallery .image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+  
+.gallery .image span {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery .image:hover img {
+    transform: scale(1.1);
+}
+
+.preview-box {
+    box-sizing: border-box;
+    max-width: 50vw;
+    position: fixed;
+    top: 50%;
+	width: calc(100% - 60px);
+	left: 55%;
+    background: white;
+    transform: translate(-50%, -50%) scale(0.9);
+    border-radius: 3px;
+    padding: 0 5px 5px 5px;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.preview-box.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.preview-box .details {
+    display: flex;
+    align-items: center;
+    padding: 13px 15px 13px 10px;
+    justify-content: space-between;
+    min-width: 45%;
+}
+
+.preview-box .details .title {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.details .title p {
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.details .icon {
+    color: blue;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.preview-box .image-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.image-box img {
+    max-height: 50vh;
+    border-radius: 0 0 3px 3px;
+    max-width: 100%;
+}
+
+.shadow {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.shadow.show {
+    display: block;
+}
+
+@media only screen and (max-width: 459px){
+    .preview-box .details .title {
+        display: none;
+    }
+    .preview-box .details {
+        justify-content: end;
+    }
+    .shadow.show {
+        display: block;
+        padding: 40px 20px;
+    }
+}

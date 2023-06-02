@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ifpi-projeto-integrador/static/css/main.96186307.css",
+    "main.js": "/ifpi-projeto-integrador/static/js/main.ba3899f6.js",
+    "static/media/bipe.jpg": "/ifpi-projeto-integrador/static/media/bipe.0fcf2bcbeff4a9b87e80.jpg",
+    "static/media/bastao.jpg": "/ifpi-projeto-integrador/static/media/bastao.587058eeb112c8f90774.jpg",
+    "static/media/tripe.webp": "/ifpi-projeto-integrador/static/media/tripe.377b74967d36bb6537e1.webp",
+    "static/media/logo.svg": "/ifpi-projeto-integrador/static/media/logo.960a8286e6111b55586f372b16f4dcaa.svg",
+    "index.html": "/ifpi-projeto-integrador/index.html",
+    "main.96186307.css.map": "/ifpi-projeto-integrador/static/css/main.96186307.css.map",
+    "main.ba3899f6.js.map": "/ifpi-projeto-integrador/static/js/main.ba3899f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96186307.css",
+    "static/js/main.ba3899f6.js"
+  ]
+}
